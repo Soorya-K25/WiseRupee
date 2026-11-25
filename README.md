@@ -35,23 +35,6 @@ The project is centred around these planned product areas. Please verify each fe
 - **Savings Goals** — plan and monitor progress towards financial targets.
 - **Financial Assistant** — optional conversational guidance, if enabled in the current build.
 
-## 🖥️ Screenshots
-
-Add screenshots captured from the live application using fictional demo data.
-
-| Application View | Screenshot |
-|---|---|
-| Home / Dashboard | `screenshots/dashboard.png` |
-| Expense Tracking | `screenshots/expenses.png` |
-| Budget Planning | `screenshots/budget.png` |
-| Savings Goals | `screenshots/goals.png` |
-
-To display an image in this README, add it to `screenshots/` and use:
-
-```markdown
-![WiseRupee Dashboard](screenshots/dashboard.png)
-```
-
 ## 🧰 Technology Stack
 
 The supplied source-code export identifies:
