@@ -7,12 +7,6 @@
 
 <p align="center">
   <a href="https://rupee-wise-life-planner.lovable.app/">🌐 Live Demo</a> ·
-  <a href="docs/WiseRupee-Project-Report.pdf">📄 Project Report</a> ·
-  <a href="docs/WiseRupee-Technical-Documentation.pdf">🛠️ Technical Documentation</a> ·
-  <a href="docs/WiseRupee-User-Guide.pdf">📘 User Guide</a>
-</p>
-
----
 
 ## 📌 About the Project
 
