@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>WiseRupee - AI-Powered Personal Finance Planner</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="nav">
+  <a class="logo" href="#" data-view="plan">₹ Wise<span>Rupee</span></a>
+  <button id="menuBtn" aria-label="Toggle menu">☰</button>
+  <nav id="menu">
+    <a href="#" data-view="plan" class="on">My Plan</a>
+    <a href="#" data-view="spend">Expenses</a>
+    <a href="#" data-view="insights">Insights</a>
+    <a href="#" data-view="invest">Investments</a>
+    <a href="#" data-view="goals">Goals</a>
+    <a href="#" data-view="ask">Can I afford it?</a>
+  </nav>
+</header>
+
+<main>
+  <section id="plan" class="view active">
+    <h1>Know where every rupee should go.</h1>
+    <p class="lead">Tell us about your life stage. WiseRupee splits your salary to fit it.</p>
+    <form id="profileForm" class="panel grid">
+      <label>Name<input id="name" placeholder="Your name"></label>
+      <label>Monthly salary (₹)<input id="salary" type="number" min="1" value="60000" required></label>
+      <label>Life stage
+        <select id="status"><option value="bachelor">Bachelor</option><option value="married">Married</option></select></label>
+      <label>Children<input id="kids" type="number" min="0" max="6" value="0"></label>
+      <label>Monthly rent / EMI (₹, optional)<input id="rent" type="number" min="0" placeholder="Auto-estimate"></label>
+      <label>Age<input id="age" type="number" min="18" max="80" value="28"></label>
+      <label>Risk comfort
+        <select id="risk"><option value="low">Low</option><option value="medium" selected>Medium</option><option value="high">High</option></select></label>
+      <button class="btn primary" type="submit">Build my plan</button>
+    </form>
+    <div id="budget"></div>
+  </section>
+
+  <section id="spend" class="view">
+    <h2>Log an expense</h2>
+    <form id="expForm" class="panel grid">
+      <label>Amount (₹)<input id="eAmt" type="number" min="1" required></label>
+      <label>Category<select id="eCat"></select></label>
+      <label>Date<input id="eDate" type="date" required></label>
+      <label>Note<input id="eNote" placeholder="e.g. Weekly vegetables"></label>
+      <button class="btn primary" type="submit">Add expense</button>
+    </form>
+    <div id="expList"></div>
+  </section>
+
+  <section id="insights" class="view"><h2>Your spending pattern</h2><div id="insightOut"></div></section>
+  <section id="invest" class="view"><h2>Your investment plan</h2><div id="investOut"></div></section>
+
+  <section id="goals" class="view">
+    <h2>Savings goals</h2>
+    <form id="goalForm" class="panel grid">
+      <label>Goal<input id="gName" placeholder="Emergency fund, trip, course" required></label>
+      <label>Target (₹)<input id="gAmt" type="number" min="1" required></label>
+      <label>Months to reach it<input id="gMonths" type="number" min="1" required></label>
+      <button class="btn primary" type="submit">Add goal</button>
+    </form>
+    <div id="goalList"></div>
+  </section>
+
+  <section id="ask" class="view">
+    <h2>Can I afford it?</h2>
+    <form id="askForm" class="panel grid">
+      <label>What are you buying?<input id="aItem" placeholder="New phone" required></label>
+      <label>Price (₹)<input id="aPrice" type="number" min="1" required></label>
+      <button class="btn primary" type="submit">Check</button>
+    </form>
+    <div id="askOut"></div>
+  </section>
+</main>
+
+<footer>Educational guidance, not financial advice. Data stays in your browser.</footer>
+<script src="script.js"></script>
+</body>
+</html>
